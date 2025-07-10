@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynn's Portfolio </title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/8fab7f9f8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+      <div class="container">
+        <nav>
+            <img src="Images/logo.png" alt="Logo" class="logo" width="100" height="100">
+          <ul id="sidemenu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fa-solid fa-xmark nav-close" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars nav-open" onclick="openmenu()"></i>
+        </nav>
+<div class="header-text">
+          <h1>Hi, I'm <span>Lynn</span> Jepkemboi Bitok.</h1>
+          <p>Software engineer.</p>
+        </div>
+      </div>
+    </header>
+    <main>
+        <!------about section ------->
+        <section id="About">
+            <div class="container">
+                <div class="row">
+                    <div class ="about-col-1">
+                        <img src="Images/lynnpicture.JPG" alt="Lynn's Photo" width="500" height="400">
+                    </div>
+                <div class ="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Lynn Jepkemboi Bitok, a passionate software engineer creating innovative solutions. I specialize in web development, mobile applications, and IT consultancy.I'm open to learn and collaborate in projects.</p>
+                    <p>With a strong foundation in programming languages and frameworks, I strive to deliver high-quality code and user-friendly experiences. My goal is to contribute to projects that make a positive impact on people's lives and the world at large.</p>
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                        <li><span>Web Development</span><br>Designing Websites</li>
+                        <li><span>App Development</span><br>Building Android/IOS Applications</li>
+                        <li><span>IT Consultancy</span><br>Providing IT support</li>
+                      </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                      <ul>
+                        <li><span>2024-2025</span><br>Python Tutor at BITSA</li>
+                        <li><span>2025 - Current</span><br>Software Intern at Besoft</li>
+                      </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                      <ul>
+                        <li><span>2021</span><br>St Joseph Chepterit</li>
+                        <li><span>2022</span><br>Baraton University</li>
+                        <li><span>2025</span><br>Power Learn Project</li>
+                      </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!------services section ------->
+    <section id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                  <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Development</h2>
+                    <p>I build custom websites that work perfectly on all devices. Includes secure hosting and easy content updates so you can focus on your business.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-mobile-button"></i>
+                    <h2>App Development</h2>
+                    <p>I create user-friendly mobile apps for iOS and Android. Your app will be tested thoroughly and published to app stores for you.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-user"></i>
+                    <h2>IT Consultancy</h2>
+                    <p>"I provide tech advice to improve your business efficiency. We'll identify problems and implement solutions together step by step.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------Projects Section ------->
+    <section id="Projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+          <div class="project">
+            <img src="Images/website.jpg" alt="Project 1">
+            <div class="layer">
+              <h3>Task Manager</h3>
+              <p>A web application that helps users manage their tasks efficiently.</p>
+              <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="Images/mobile app.jpg" alt="Project 2">
+            <div class="layer">
+              <h3>Fitness app</h3>
+              <p>An Android app that tracks fitness activities and provides health tips.</p>
+              <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="Images/online shopping.jpg" alt="Project 3">
+            <div class="layer">
+             <h3>Online shopping platform</h3>
+              <p>A consultancy project that improved IT infrastructure for a local business.</p>
+              <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </section>
+    <!-------Contact Section ------->
+    <section id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>If you have any questions or want to work together, feel free to reach out!</p>
+            <p><i class="fa-solid fa-paper-plane"></i> Email:lynnjepkemboibitok@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> Phone: +254 758783437</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/share/19CZZaXpds/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/elwhydouble?igsh=MTBsY2R5ZnRlM2E5" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+              <a href="www.linkedin.com/in/lynn-bitok-366018359" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/LynnBitok6391" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Images/LYNN BITOK CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+    </section>
+    </main>
+    <footer class="copyright">
+      <p>Copyright ©  Lynn Jepkemboi Bitok. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
